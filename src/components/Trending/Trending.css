@@ -1,0 +1,52 @@
+.trending_movies {
+    position: relative;
+    display: flex;
+    column-gap: 14px;
+    overflow-x: scroll;
+    padding: 10px 20px 20px 10px;
+}
+
+.trending_movies::-webkit-scrollbar {
+    display: none;
+}
+
+
+.trending_movie {
+    position: relative;
+    width: 100%;
+    min-width: 340px;
+    height: 180px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.trending_movie:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    z-index: 1;
+}
+
+.movie_info {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+
+
+.movie_info h4 {
+    margin: 0px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.movie_info>span {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    margin-right: 10px;
+}
