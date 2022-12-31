@@ -31,6 +31,7 @@ const Recommended = ({ recommended, title }) => {
                             height="140"
                             image={`https://image.tmdb.org/t/p/original${movie.backdrop_path}`}
                             alt="green iguana"
+                            className="card_media"
                             sx={{ borderRadius: '6px' }}
                         />
                         <CardContent sx={{ height: '30', color: "#fff" }} className="card_content">

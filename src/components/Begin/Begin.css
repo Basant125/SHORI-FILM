@@ -1,0 +1,150 @@
+.begin {
+    position: relative;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.begin_home {
+    position: relative;
+    height: 100vh;
+    background: rgba(0, 0, 0, .4);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .8) 0, transparent 60%, rgba(0, 0, 0, .8)), url('../../assests/begin.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 10px solid #171D2D;
+}
+
+.begin_home>span {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #F74944;
+}
+
+.join_btn {
+    position: absolute !important;
+    top: 20px;
+    right: 20px;
+    background-color: #fff !important;
+    padding: .2rem .4rem !important;
+    color: #F74944 !important;
+    font-weight: 600 !important;
+}
+
+.begin_home_content {
+    position: absolute;
+}
+
+.begin_home_content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+}
+
+.begin_home_content h1 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.show_btn {
+    width: 220px !important;
+    height: 60px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    background-color: #F74944 !important;
+    column-gap: 20px !important;
+    color: #fff !important;
+    transition: column-gap .5s !important;
+}
+
+.show_btn:hover {
+    column-gap: 40px !important;
+}
+
+
+.begin_home_feature {
+    min-height: 500px;
+    border-bottom: 10px solid #171D2D;
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.feature2 {
+    flex-direction: row-reverse;
+}
+
+.begin_home_feature img {
+    width: 300px;
+}
+
+.begin_home_feature p {
+    width: 500px;
+}
+
+.begin_home_feature p h4 {
+    font-size: 2.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem
+}
+
+.begin_home_feature p span {
+    font-size: 1.625rem;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+    .begin_home_content h1 {
+        font-size: 48px;
+    }
+
+    .begin_home_content {
+        width: 50%;
+    }
+
+    .show_btn {
+        width: 350px !important;
+        height: 60px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        background-color: #F74944 !important;
+        color: #fff !important;
+    }
+
+    .begin_home_feature {
+        /* text-align: left; */
+    }
+
+    .begin_home_feature img {
+        width: 500px;
+    }
+
+    .begin_home_feature p h4 {
+        font-size: 3.125rem;
+        line-height: 1.1;
+        margin-bottom: 0.5rem
+    }
+
+    .begin_home_feature p span {
+        font-size: 1.625rem;
+        font-weight: 400;
+    }
+}

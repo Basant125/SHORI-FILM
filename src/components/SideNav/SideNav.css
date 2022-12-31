@@ -24,23 +24,25 @@
 
 .dash_icon {
     top: 8px;
-    font-size: 30px !important;
+    font-size: 24px !important;
+    font-weight: 700;
     color: #F74944;
 }
 
 .nav_links {
     display: flex;
-    column-gap: 18px;
+    column-gap: 14px;
     align-items: center;
 }
 
 .link_icon {
-    font-size: 28px !important;
+    font-size: 24px !important;
 }
 
 .user_icon {
     color: #F74944;
     font-size: 30px !important;
+    cursor: pointer;
 }
 
 .link_icon:hover {
@@ -88,10 +90,15 @@
     }
 
     .dash_icon {
-        font-size: 36px !important;
+        font-size: 28px !important;
+        font-weight: 700;
     }
 
     .user_icon {
         font-size: 50px !important;
+    }
+
+    .link_icon {
+        font-size: 28px !important;
     }
 }

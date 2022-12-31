@@ -11,9 +11,12 @@ import './SideNav.css'
 const SideNav = () => {
     return <Box className="sidenav_desk">
         <nav className="nav">
-            <MovieIcon className="dash_icon" />
+            {/* <MovieIcon className="dash_icon" /> */}
+            <NavLink to="/" style={{ textDecoration: 'none' }}>
+                <span className="dash_icon">SFLIX</span>
+            </NavLink>
             <Box className="nav_links">
-                <NavLink to="/"
+                <NavLink to="/home"
                     className={({ isActive }) => (isActive ? 'active' : 'inactive')} >
                     <Tooltip title="All Movies & Show" placement="left-start" arrow>
                         <DashboardIcon className="link_icon" />
@@ -42,7 +45,9 @@ const SideNav = () => {
             </Box>
 
             <Box>
-                <AccountCircleIcon className="user_icon" />
+                <Tooltip title="Profile" placement="left-start" arrow>
+                    <AccountCircleIcon className="user_icon" />
+                </Tooltip>
             </Box>
         </nav>
     </Box>;

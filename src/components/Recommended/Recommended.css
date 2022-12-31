@@ -15,6 +15,15 @@
 
 .card {
     position: relative;
+    overflow: hidden;
+}
+
+.card_media {
+    transition: all 0.4s;
+}
+
+.card_media:hover {
+    transform: scale(1.1);
 }
 
 .bookmark_icon {
